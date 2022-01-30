@@ -9,7 +9,7 @@ const DestinationSearch = () => {
     const navigation = useNavigation();
     const [inputText, setInputText] = useState('');
 
-    console.log(inputText);
+    
     return (
         <View style={styles.container}>
             <TextInput

@@ -10,6 +10,7 @@ const Router = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+
                 <Stack.Screen
                     name={'Home'}
                     component={HomeTabNavigator}
@@ -25,13 +26,15 @@ const Router = () => {
                         title: 'Search Your Destination'
                     }}
                 />
+
                 <Stack.Screen
                     name={'GuestScreen'}
                     component={GuestScreen}
                     options={{
-                        title: 'Guests Screen Options'
+                        title: 'Guests'
                     }}
                 />
+                
             </Stack.Navigator>
         </NavigationContainer>
     );

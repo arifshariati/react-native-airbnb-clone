@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 const styles = StyleSheet.create({
     image: {
         width: '100%',
-        height: 500,
+        height: '100%',
         resizeMode: 'cover',
         justifyContent: 'center',
     },
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         width: 200,
         height: 40,
-        borderRadius: 10,
+        borderRadius: 20,
         marginTop: 25
     },
     buttonText: {

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         height: 50,
         marginHorizontal: 20,
-        borderRadius: 10
+        borderRadius: 25
     },
     searchPressableText: {
         fontSize: 20,
