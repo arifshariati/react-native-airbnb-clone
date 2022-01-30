@@ -3,6 +3,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import Router from './src/navigation/Router';
 
+import { withAuthenticator } from 'aws-amplify-react-native'
 
 const App = () => {
 
@@ -14,4 +15,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
