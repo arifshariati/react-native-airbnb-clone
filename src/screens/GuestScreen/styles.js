@@ -17,6 +17,20 @@ const styles = StyleSheet.create({
         borderColor: '#676767',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    searchPressable: {
+        marginBottom: 20,
+        backgroundColor: '#f15454',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 50,
+        marginHorizontal: 20,
+        borderRadius: 10
+    },
+    searchPressableText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white'
     }
 });
 

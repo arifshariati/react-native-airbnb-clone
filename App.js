@@ -1,32 +1,16 @@
+import 'react-native-gesture-handler';
 import React from 'react';
+import { StatusBar } from 'react-native';
+import Router from './src/navigation/Router';
 
-import {
-  SafeAreaView,
-  StatusBar,
-  useColorScheme,
-} from 'react-native';
-
-import {
-  Colors
-} from 'react-native/Libraries/NewAppScreen';
-
-import { HomeScreen, SearchResultsScreen, DestinationSearch, GuestScreen } from './src/screens';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      {/* <HomeScreen /> */}
-      {/* <SearchResultsScreen /> */}
-      {/* <DestinationSearch /> */}
-      <GuestScreen />
-    </SafeAreaView>
+    <>
+      <StatusBar barStyle={'dark-content'} />
+      <Router />
+    </>
   );
 };
 
